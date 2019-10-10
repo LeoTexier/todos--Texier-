@@ -1,0 +1,12 @@
+
+<h2>Gestionnaire de ToDo</h2>
+<v-btn color="primary" @click="dialog=!dialog">Ajouter...</v-btn>
+<form v-show="dialog">
+<input type="text" v-model="todos.name" placeholder="Label">
+<input type="text" v-model="todos.description" placeholder="description...">
+<input type="float" v-model="todos.avancement" placeholder="avancement...">
+<input type="int" v-model="todos.poids" placeholder="poids...">
+
+<v-btn color="success" @click="addTodo">Valider</v-btn>
+</form>
+
